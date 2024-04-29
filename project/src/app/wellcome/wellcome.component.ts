@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-wellcome',
   standalone: true,
@@ -8,5 +9,4 @@ import { Component } from '@angular/core';
   styleUrl: './wellcome.component.css'
 })
 export class WellcomeComponent {
-
 }

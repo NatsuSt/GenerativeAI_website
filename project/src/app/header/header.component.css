@@ -1,0 +1,63 @@
+/*
+====================================
+Я знаю что использовать размеры в
+пикселях сейчас не лучшая идея, но
+это уже потом пересмотрю.
+====================================
+ */
+
+
+/*
+  HEADER COMPONENT
+ */
+.header {
+  padding: 6px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+/*
+  LOGO BOX
+ */
+.logo-box {
+  display: flex;
+}
+
+.logo-image {
+  height: 60px;
+  width: 60px;
+}
+
+.logo-desc {
+  margin: 15px 10px;
+}
+
+.logo-up {
+  color: #002223;
+}
+
+.logo-council {
+  color: #426566;
+}
+
+/*
+  NAV BUTTONS
+*/
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #636B80;
+}
+
+.activated {
+  color: #0A142A;
+}

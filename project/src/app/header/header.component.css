@@ -6,12 +6,20 @@
 ====================================
  */
 
+.head_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 /*
   HEADER COMPONENT
  */
 .header {
-  padding: 6px 50px;
+  height: 75px;
+  width: 90%;
   display: flex;
   justify-content: space-around;
 }
@@ -20,6 +28,7 @@
  */
 .logo-box {
   display: flex;
+  width: 30%;
 }
 
 .logo-image {
@@ -28,21 +37,32 @@
 }
 
 .logo-desc {
-  margin: 15px 10px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo-up {
+  margin: 0;
   color: #002223;
 }
 
 .logo-council {
+  margin: 0;
   color: #426566;
 }
 
 /*
-  NAV BUTTONS
+  NAV Text
 */
-
+.links_box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+}
 .nav {
   display: flex;
   list-style-type: none;
@@ -60,4 +80,41 @@
 
 .activated {
   color: #0A142A;
+  font-weight: bold;
 }
+
+
+.buttons_box{
+  display: flex;
+  width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.round-button {
+  display: inline-block;
+  padding: 10px 20px; /* Измените значения, если нужно */
+  border-radius: 45%; /* Делает кнопку круглой */
+
+  background-color: #ffffff; /* Задайте цвет фона, который вам нравится */
+  color: #0A142A; /* Цвет текста */
+  font-size: 16px; /* Измените размер текста по вашему желанию */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #417BFE;
+}
+
+.round-button2 {
+  display: inline-block;
+  padding: 10px 20px; /* Измените значения, если нужно */
+  border-radius: 45%; /* Делает кнопку круглой */
+  background-color: #12A47F; /* Задайте цвет фона, который вам нравится */
+  color: #FFFFFF; /* Цвет текста */
+  font-size: 16px; /* Измените размер текста по вашему желанию */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+

@@ -1,0 +1,32 @@
+
+
+/* HEAD */
+.about_container{
+  width: 100%;
+  height: 100%;
+}
+
+.head_container{
+  width: 100%;
+  height: 80vh;
+
+}
+.head_container_inner{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_feedback{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  background-color: #417BFE;
+  color: #D5DEF5;
+  align-items: center;
+  justify-content: space-evenly;
+}

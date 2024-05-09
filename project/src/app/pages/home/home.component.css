@@ -1,0 +1,78 @@
+
+/* TOP PART */
+
+.introduction {
+  text-align: center;
+  margin: 192px 184px 264px 184px;
+}
+
+.introduction-h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 64px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0;
+  color: #0A142A;
+}
+
+.introduction-h3 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 24px;
+  color: #636B80;
+  margin: 0 108px;
+
+}
+
+.introduction-button {
+  transition: 0.5s;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #12A47F;
+  border: none;
+  border-radius: 100px;
+  padding: 20px 24px 20px 24px;
+  color: #FFFFFF;
+}
+
+.introduction-button:hover {
+  transition: 0.5s;
+  margin-top: 32px;
+  background-color: #417BFE;
+  border: none;
+  border-radius: 100px;
+  padding: 20px 24px 20px 24px;
+  color: #FFFFFF;
+}
+
+
+.introduction-block {
+  position: absolute; /* Позволяет установить точное положение элемента относительно его ближайшего позиционированного предка */
+  /*top: 107px; !* Положение сверху *!*/
+  margin: 0 auto;
+  /*left: 0; !* Положение слева *!*/
+  width: 465px; /* Ширина элемента */
+  height: 465px; /* Высота элемента */
+  z-index: -1; /* Задний план */
+}
+
+/* Organization block */
+.organization {
+
+}
+
+.organization-list {
+  display: flex;
+  list-style-type: none;
+  height: 60px;
+  margin: 0 72px;
+  justify-content: space-between;
+}
+
+.organization-list-item {
+  /*margin: auto;*/
+  align-self: center;
+}
+

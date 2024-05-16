@@ -6,6 +6,28 @@
 ====================================
  */
 
+/*
+HEADER BAGE
+*/
+
+.badge__body {
+  background-color: #417BFE;
+  color: #FFFFFF;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge__text {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
 .head_container{
   width: 100%;
   display: flex;
@@ -94,7 +116,7 @@
 .round-button {
   display: inline-block;
   padding: 10px 20px; /* Измените значения, если нужно */
-  border-radius: 45%; /* Делает кнопку круглой */
+  border-radius: 100px; /* Делает кнопку круглой */
 
   background-color: #ffffff; /* Задайте цвет фона, который вам нравится */
   color: #0A142A; /* Цвет текста */
@@ -108,7 +130,7 @@
 .round-button2 {
   display: inline-block;
   padding: 10px 20px; /* Измените значения, если нужно */
-  border-radius: 45%; /* Делает кнопку круглой */
+  border-radius: 100px; /* Делает кнопку круглой */
   background-color: #12A47F; /* Задайте цвет фона, который вам нравится */
   color: #FFFFFF; /* Цвет текста */
   font-size: 16px; /* Измените размер текста по вашему желанию */

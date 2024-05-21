@@ -31,6 +31,55 @@
   justify-content: space-evenly;
 }
 
+/*Button*/
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #0A142A1A;
+  border-radius: 20px; /* Радиус скругления */
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.button-span {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.button {
+  transition: 0.5s;
+  /*margin-top: 32px;*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #12A47F;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 24px 15px 24px;
+  color: #FFFFFF;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  /*left: -10px; !* Расположение кружка относительно левого края бейджа *!*/
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #12A47F;
+  border: none;
+  border-radius: 50%; /* Превращаем прямоугольный блок в круг */
+}
+.empowering__span,
+.empowering__p {
+  padding-left: 15px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #636B80;
+}
 
 /*FIRST GOAL*/
 
@@ -134,3 +183,147 @@
   width: 700px;
   color: #636B80;
 }
+
+
+
+
+
+/*fef*/
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4ff;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.leadership {
+  background: #eef;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.leadership h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.leadership ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leadership li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.leadership .number {
+  flex: 1;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.leadership .name {
+  flex: 3;
+  font-size: 1.2em;
+  color: #007BFF;
+}
+
+.leadership .title {
+  flex: 3;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.call-to-action {
+  background: linear-gradient(to right, #cce0ff, #f0f4ff);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.call-to-action h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.qualify-btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  background: #eef;
+  padding: 50px 20px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 1.5em;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px;
+  font-size: 1.2em;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

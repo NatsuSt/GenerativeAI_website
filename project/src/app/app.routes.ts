@@ -18,8 +18,7 @@ export const routes: Routes = [
     path: 'about',
     pathMatch: 'prefix',
     loadChildren: () => import('./pages/about-page/about-page.routes').then(r => r.ABOUT_PAGE_ROUTES)
-  },
-
+  }
 
 
 ];

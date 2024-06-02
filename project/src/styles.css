@@ -6,3 +6,21 @@ body{
 .bold{
   font-weight: bold;
 }
+
+.button {
+  transition: 0.5s;
+  /*margin-top: 32px;*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #12A47F;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 24px 15px 24px;
+  color: #FFFFFF;
+}
+
+.button:hover {
+  transition: 0.5s;
+  background-color: #417BFE;
+}
+

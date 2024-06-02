@@ -37,12 +37,7 @@
 
 .button:hover {
   transition: 0.5s;
-  margin-top: 32px;
   background-color: #417BFE;
-  border: none;
-  border-radius: 100px;
-  padding: 20px 24px 20px 24px;
-  color: #FFFFFF;
 }
 
 .button-span {
@@ -179,5 +174,38 @@ hr {
   margin-bottom: 40px;
 }
 
+.empowering__image {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  height: 100vh; /* Высота контейнера равна высоте окна просмотра */
+}
 
+/* Container for join us box */
+.join__us__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  border: none;
+  border-radius: 1.5em;
+  background: linear-gradient(rgba(65, 123, 254, 10%) 80%, rgba(65, 123, 254, 100%));
+}
+
+.join__us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-10%);
+}
+
+.join__us__text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 

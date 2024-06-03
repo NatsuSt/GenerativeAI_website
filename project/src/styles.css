@@ -10,8 +10,6 @@ body{
 .button {
   transition: 0.5s;
   cursor: pointer;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
   background-color: #12A47F;
   border: none;
   border-radius: 100px;

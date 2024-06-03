@@ -300,7 +300,14 @@
     </div>
   </div>
 
-<!--  MEMBER VOICES-->
+<!--  Events list-->
+  <div class="event__list">
+<!--    <app-events [eventComp]="events[0]"></app-events>-->
+<!--    <app-events [eventComp]="events[1]"></app-events>-->
+    <app-events *ngFor="let ev of events" [eventComp]="ev"></app-events>
+  </div>
+
+  <!--  MEMBER VOICES-->
   <div class="member_voices__body">
     <div class="badge">
       <div  class="circle"></div>

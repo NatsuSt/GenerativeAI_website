@@ -56,7 +56,8 @@
   width: 100%;
   height: 100%;
   position: relative;
-  top: 0;
+  /*top: 15vh;*/
+  margin-top: 15vh;
 }
 
 /* TOP PART */
@@ -178,7 +179,8 @@ hr {
   display: flex;
   justify-content: center; /* Центрирование по горизонтали */
   align-items: center; /* Центрирование по вертикали */
-  height: 100vh; /* Высота контейнера равна высоте окна просмотра */
+  /*height: 100vh; !* Высота контейнера равна высоте окна просмотра *!*/
+  margin-bottom: 4em;
 }
 
 /* Membership */
@@ -331,6 +333,14 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 50%;
+}
+
+/* Events list body */
+.event__list {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
 }
 
 /* Member voices part*/

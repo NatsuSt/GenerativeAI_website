@@ -1,0 +1,27 @@
+<hr>
+<div class="eventCard">
+  <div class="event-info">
+    <div class="event-image"></div>
+    <div class="event-detail">
+      <h2 class="event-title">{{eventComp.title}}</h2>
+      <div class="event-text">{{eventComp.location}}</div>
+      <div class="event-text">{{eventComp.time}}</div>
+    </div>
+  </div>
+  <div class="event-date">
+    <div class="event-text">{{eventComp.month}}</div>
+    <div class="event-text">{{eventComp.weekday}}</div>
+  </div>
+  <div class="event-day-body">
+    <div class="event-day">{{eventComp.date}}</div>
+  </div>
+  <div class="event-buttons">
+    <button *ngIf="eventComp.buy_ticket" class="buy-button">
+      <span class="button-span">Buy ticket</span>
+    </button>
+    <button *ngIf="eventComp.more_info" class="more-button">
+      <span class="button-span">More info</span>
+    </button>
+  </div>
+</div>
+<hr>

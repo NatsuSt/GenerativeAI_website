@@ -29,10 +29,17 @@ HEADER BAGE
 
 
 .head_container{
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgba(255, 255, 255, 0.5); /* Прозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона */
+  z-index: 1000; /* Высокий z-index для того, чтобы быть поверх других элементов */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Небольшая тень для визуального отделения */
 }
 
 

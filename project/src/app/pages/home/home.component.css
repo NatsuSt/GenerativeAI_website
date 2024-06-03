@@ -361,6 +361,14 @@ hr {
   color: #0A142A;
 }
 
+.member__left__shift {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+
 /* Container for join us box */
 .join__us__body {
   display: flex;

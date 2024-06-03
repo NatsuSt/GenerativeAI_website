@@ -120,30 +120,18 @@ HEADER BAGE
   align-items: center;
 }
 
-.round-button {
-  display: inline-block;
-  padding: 10px 20px; /* Измените значения, если нужно */
-  border-radius: 100px; /* Делает кнопку круглой */
-
-  background-color: #ffffff; /* Задайте цвет фона, который вам нравится */
-  color: #0A142A; /* Цвет текста */
-  font-size: 16px; /* Измените размер текста по вашему желанию */
-  text-align: center;
-  text-decoration: none;
+.button2 {
+  transition: 0.5s;
   cursor: pointer;
-  border: 1px solid #417BFE;
+  background-color: white;
+  border: 1px solid rgba(65, 123, 254, 1);
+  border-radius: 100px;
+  padding: 15px 24px 15px 24px;
+  color: rgba(65, 123, 254, 1);
 }
 
-.round-button2 {
-  display: inline-block;
-  padding: 10px 20px; /* Измените значения, если нужно */
-  border-radius: 100px; /* Делает кнопку круглой */
-  background-color: #12A47F; /* Задайте цвет фона, который вам нравится */
-  color: #FFFFFF; /* Цвет текста */
-  font-size: 16px; /* Измените размер текста по вашему желанию */
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
+.button2:hover {
+  color: white;
+  background-color: rgba(65, 123, 254, 1);
 }
 

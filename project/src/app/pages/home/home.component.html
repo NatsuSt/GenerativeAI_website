@@ -302,8 +302,6 @@
 
 <!--  Events list-->
   <div class="event__list">
-<!--    <app-events [eventComp]="events[0]"></app-events>-->
-<!--    <app-events [eventComp]="events[1]"></app-events>-->
     <app-events *ngFor="let ev of events" [eventComp]="ev"></app-events>
   </div>
 
@@ -316,6 +314,12 @@
     <h1 class="member_voices__h1">
       Insights about Generative AI Councils joining
     </h1>
+
+<!--    <div class="member__left__shift">-->
+<!--      <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>-->
+<!--    </div>-->
+
+
     <app-svg-pictures [svgID]="2"></app-svg-pictures>
   </div>
 

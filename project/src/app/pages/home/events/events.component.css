@@ -91,6 +91,10 @@ hr {
   color: white;
 }
 
+.buy-button:hover {
+  background-color: black;
+}
+
 .more-button {
   transition: 0.5s;
   margin-left: 2em;
@@ -99,5 +103,10 @@ hr {
   border: 1px solid rgba(65, 123, 254, 1);
   border-radius: 100px;
   padding: 15px 24px 15px 24px;
+}
+
+.more-button:hover {
+  color: white;
+  background-color: rgba(65, 123, 254, 1);
 }
 

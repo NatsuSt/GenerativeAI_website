@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import {NgForOf} from "@angular/common";
 import {SvgPicturesComponent} from "./svg-pictures/svg-pictures.component";
 import {EventComp} from "./shared/EventClass";
 import {EventsComponent} from "./events/events.component";
-import {NgForOf} from "@angular/common";
+import {Comment} from "./shared/Comment";
+import {CommentsComponent} from "./comments/comments.component";
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,8 @@ import {NgForOf} from "@angular/common";
   imports: [
     SvgPicturesComponent,
     EventsComponent,
-    NgForOf
+    NgForOf,
+    CommentsComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
@@ -59,5 +62,11 @@ export class HomeComponent {
       'March',
       '12'
     )
+  ]
+  comments: Comment[] = [
+    new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
+    new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
+    new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
+    new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
   ]
 }

@@ -1,0 +1,23 @@
+<div class="comments__body">
+  <div class="comments__user">
+    <div class="user__logo"></div>
+    <div class="user__stats">
+      <div class="user__name">{{comment.name}}</div>
+      <div class="user__stars">
+        <div
+          class="star"
+          *ngFor="let _ of createArrayFromNumber(comment.stars);let i = index">
+          <app-svg-pictures [svgID]="3"></app-svg-pictures>
+        </div>
+        <div
+          class="star"
+          *ngFor="let _ of createArrayFromNumber(5 - comment.stars);let i = index">
+          <app-svg-pictures [svgID]="4"></app-svg-pictures>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="comments__desc">
+    {{comment.description}}
+  </div>
+</div>

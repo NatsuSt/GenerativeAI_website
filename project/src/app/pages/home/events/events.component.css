@@ -4,9 +4,15 @@ hr {
 }
 
 .eventCard {
+  transition: 0.5s;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
   /*justify-content: space-between;*/
+}
+
+.eventCard:hover {
+  background-color: #E1E8FF;
 }
 
 .event-image {
@@ -60,12 +66,26 @@ hr {
 }
 
 .event-day-body {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  /*text-align: center;*/
   margin: auto 0;
 }
 
-.event-day {
+.event-day, .event-day-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Inter;
   font-size: 64px;
   font-weight: 700;
@@ -74,10 +94,42 @@ hr {
   color: rgba(10, 20, 42, 1);
 }
 
+.slow, .fast {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slow {
+  transition-duration: 0.6s;
+}
+
+.fast {
+  transition-duration: 0.3s;
+}
+
+.event-day-hover .slow,
+.event-day-hover .fast {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.eventCard:hover .event-day .slow,
+.eventCard:hover .event-day .fast {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.eventCard:hover .event-day-hover .slow,
+.eventCard:hover .event-day-hover .fast {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .event-buttons {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+  margin-right: 0.5em;
   align-items: center;
 }
 

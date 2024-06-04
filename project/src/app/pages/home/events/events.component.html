@@ -13,7 +13,14 @@
     <div class="event-text">{{eventComp.weekday}}</div>
   </div>
   <div class="event-day-body">
-    <div class="event-day">{{eventComp.date}}</div>
+    <div class="event-day">
+      <span class="slow">{{eventComp.date[0]}}</span>
+      <span class="fast">{{eventComp.date[1]}}</span>
+    </div>
+    <div class="event-day-hover">
+      <span class="slow">{{eventComp.date[0]}}</span>
+      <span class="fast">{{eventComp.date[1]}}</span>
+    </div>
   </div>
   <div class="event-buttons">
     <button *ngIf="eventComp.buy_ticket" class="buy-button">

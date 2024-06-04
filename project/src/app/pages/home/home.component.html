@@ -70,7 +70,7 @@
       Dive into the heart of AI innovation: exclusive insights, elite networking, and leading-edge ethics.
       Your journey to impact AI starts here.
     </h3>
-    <button class="button" style="margin-top: 32px;">
+    <button class="button" style="margin-top: 32px;" (click)="navigateToForm()">
       <span class="button-span">Do I qualify?</span>
     </button>
   </div>
@@ -110,7 +110,7 @@
         <h1 class="empowering__h1">
           Empowering AI Innovations Worldwide
         </h1>
-        <button class="button">
+        <button class="button" (click)="navigateToForm()">
           <span class="button-span">Join us</span>
         </button>
       </div>
@@ -142,7 +142,7 @@
       <h1 class="membership__h1">
         Why join us?
       </h1>
-      <button class="button">
+      <button class="button" (click)="navigateToAbout()">
         <span class="button-span">Learn more</span>
       </button>
     </div>
@@ -231,7 +231,7 @@
       <p class="additional__p">
         Members are revolutionizing healthcare with AI, enhancing diagnostics and patient care globally.
       </p>
-      <button class="button" style="align-self: flex-start;">
+      <button class="button" style="align-self: flex-start;" (click)="navigateToAbout()">
         <span class="button-span">Learn more</span>
       </button>
     </div>
@@ -251,7 +251,7 @@
       <p class="additional__p">
         Discover AI's role in reshaping education through personalized learning and engagement.
       </p>
-      <button class="button" style="align-self: flex-start;">
+      <button class="button" style="align-self: flex-start;" (click)="navigateToAbout()">
         <span class="button-span">Learn more</span>
       </button>
     </div>
@@ -271,7 +271,7 @@
       <p class="additional__p">
         AI is transforming finance, improving risk assessment, fraud detection, and customer experiences.
       </p>
-      <button class="button" style="align-self: flex-start;">
+      <button class="button" style="align-self: flex-start;" (click)="navigateToAbout()">
         <span class="button-span">Learn more</span>
       </button>
     </div>
@@ -315,12 +315,15 @@
       Insights about Generative AI Councils joining
     </h1>
 
-<!--    <div class="member__left__shift">-->
-<!--      <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>-->
-<!--    </div>-->
+    <div class="member__left__shift">
+      <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>
+    </div>
+    <div class="member__left__shift">
+      <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>
+    </div>
 
 
-    <app-svg-pictures [svgID]="2"></app-svg-pictures>
+<!--    <app-svg-pictures [svgID]="2"></app-svg-pictures>-->
   </div>
 
 <!-- JOIN US BLOCK-->
@@ -328,7 +331,7 @@
     <div class="join__us">
       <p class="join__us__text">Ready to join Generative AI Councils?<br>
         Apply for membership today.</p>
-      <button class="button">
+      <button class="button" (click)="navigateToForm()">
         <span class="button-span">Do I qualify?</span>
       </button>
     </div>

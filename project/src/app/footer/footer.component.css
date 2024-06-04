@@ -243,12 +243,18 @@
 }
 
 .newsletter button {
+  transition: 0.5s;
   border: none;
   background-color: rgba(18, 164, 127, 1);
   transform: translateX(-100%);
   color: white;
   padding: 1em;
   border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #417BFE;
 }
 
 hr {

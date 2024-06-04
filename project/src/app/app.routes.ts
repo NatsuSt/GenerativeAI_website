@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import {ExtraOptions, RouterModule, Routes} from '@angular/router';
+import {NgModule} from "@angular/core";
 
 /**
  * Настроил роуты, по дефолту будут перехлдить на home
@@ -19,6 +20,15 @@ export const routes: Routes = [
     pathMatch: 'prefix',
     loadChildren: () => import('./pages/about-page/about-page.routes').then(r => r.ABOUT_PAGE_ROUTES)
   }
-
-
 ];
+
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled', // Прокрутка к началу страницы
+  anchorScrolling: 'enabled' // Прокрутка к якорям (если есть)
+};
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, routerOptions)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

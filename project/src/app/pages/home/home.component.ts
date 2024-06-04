@@ -5,6 +5,7 @@ import {EventComp} from "./shared/EventClass";
 import {EventsComponent} from "./events/events.component";
 import {Comment} from "./shared/Comment";
 import {CommentsComponent} from "./comments/comments.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -68,5 +69,21 @@ export class HomeComponent {
     new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
     new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
     new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
+    new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
   ]
+
+  formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSd2hbVfsIr0XkfOG_widISRF1tm0mDfY1u4yGQpiedkiPMZIQ/viewform?usp=sf_link';
+
+  constructor(private router: Router) {
+  }
+
+  navigateToForm() {
+    window.open(this.formLink, '_blank')
+  }
+
+  navigateToAbout() {
+    this.router.navigate(['/about']).then(() => {
+      window.scrollTo(0, 0);
+    });
+  }
 }

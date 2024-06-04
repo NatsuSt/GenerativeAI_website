@@ -9,28 +9,49 @@
 .head_container{
   width: 100%;
   height: 80vh;
-
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .head_container_inner{
-  width: 100%;
+  width: 90%;
   height: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-
+.head_container_inner_second{
+  margin-left: 150px;
+}
 .header_feedback{
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
+  border-radius: 32px;
   height: 30%;
   background-color: #417BFE;
   color: #D5DEF5;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-
+.head_p_feedback{
+  font-size: 16px;
+  font-family: Open Sans;
+  color: #D5DEF5;
+  line-height: 21.79px;
+}
+.head_h1_feedback{
+  margin: 0;
+  font-size: 80px;
+  font-family: Inter;
+  color: #D5DEF5;
+  line-height: 88px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
 /*Button*/
 
 .badge {
@@ -52,13 +73,22 @@
 
 .button {
   transition: 0.5s;
-  /*margin-top: 32px;*/
   margin-left: auto;
   margin-right: auto;
   background-color: #12A47F;
   border: none;
   border-radius: 100px;
   padding: 15px 24px 15px 24px;
+  color: #FFFFFF;
+}
+
+.button:hover {
+  transition: 0.5s;
+  margin-top: 32px;
+  background-color: #417BFE;
+  border: none;
+  border-radius: 100px;
+  /*padding: 20px 24px 20px 24px;*/
   color: #FFFFFF;
 }
 
@@ -84,6 +114,7 @@
 /*FIRST GOAL*/
 
 .first_goal{
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   width: 100%;

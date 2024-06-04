@@ -105,6 +105,18 @@ HEADER BAGE
 .nav-link {
   text-decoration: none;
   color: #636B80;
+  font-family: Inter ;
+  font-weight: 500;
+
+
+}
+
+.nav-link.active {
+  text-decoration: none;
+  color: #0A142A;
+  font-size: 16px;
+  font-weight: 1000;
+  /*font-weight: bold;*/
 }
 
 .activated {

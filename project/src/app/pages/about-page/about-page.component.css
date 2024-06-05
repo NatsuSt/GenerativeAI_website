@@ -241,16 +241,20 @@ font-size: 16px;
 }
 
 .first_guiding_inner_h2{
+  margin-top: 10px;
   font-size: 52px;
-  margin: 0;
   margin-bottom: 15px;
 
 }
 
 .first_guiding_inner_p2{
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
   margin: 0;
-  width: 700px;
+  width: 824px;
   color: #636B80;
+  text-align: center;
 }
 
 
@@ -259,6 +263,14 @@ font-size: 16px;
 
 /*fef*/
 /* styles.css */
+.main_guid_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -283,6 +295,8 @@ header p {
 }
 
 .leadership {
+  width: 90%;
+  height: 540px;
   background: #eef;
   padding: 50px 20px;
   text-align: center;
@@ -367,6 +381,7 @@ header p {
   flex: 2;
   min-width: 300px;
   padding: 20px;
+  color: #949DB1;
 }
 
 .contact-form form {
@@ -379,20 +394,93 @@ header p {
   margin-bottom: 5px;
 }
 
-.contact-form input, .contact-form textarea {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+
+/*POSITION*/
+
+.position_container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.position_container_inner{
+  padding-left: 50px;
+  border-top: 1px solid #0A142A1A; /* серая полоска сверху */
+  border-bottom: 1px solid #0A142A1A; /* серая полоска снизу */
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.position_container_inner:hover{
+  background-color: #E1E8FF;
+}
+.position_container_inner_h2{
+color: #0A142A;
+  /*height: 180px;*/
+  width: 32px;
+  font-size: 64px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 60px;
+}
+.position_container_inner_p1{
+  margin-left: 150px;
+  width: 300px;
+  height: 32px;
+  font-family: Inter;
+
+  color: #0A142A;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.position_container_inner_p2{
+  margin-left: 150px;
+  color: #636B80;
+  width: 754px;
+  height: 32px;
+  font-size: 24px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 32px;
+
 }
 
-.contact-form button {
-  padding: 15px;
-  font-size: 1.2em;
-  background: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+/*CALL*/
+
+.call_container{
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/img/bgCAll.png");
+}
+.call_container_h2{
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 64px;
+  line-height: 72px;
+  width: 90%;
+  height: 216px;
+  text-align: center;
+
 }
 
+.custom-input {
+  border: 0;
+  border-bottom: 1px
+  solid #0A142A1A;
+  outline: none; /* Убираем рамку при фокусе */
+  background-color: transparent; /* Прозрачный фон */
+  font-size: 16px; /* Размер текста */
+  color: #000; /* Цвет текста */
+  padding: 5px 0; /* Отступы */
+}

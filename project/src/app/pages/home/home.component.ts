@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgForOf} from "@angular/common";
 import {SvgPicturesComponent} from "./svg-pictures/svg-pictures.component";
 import {EventComp} from "./shared/EventClass";
@@ -19,7 +19,7 @@ import {Router} from "@angular/router";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   events: EventComp[] = [
     new EventComp(
       'Reverze 2024 - The 20th Anniversary',
@@ -72,9 +72,22 @@ export class HomeComponent {
     new Comment('Keith W.', 3, 'Lorem ipsum dolor sit amet consectetur. Enim dictum amet eleifend sit sit eu ut.'),
   ]
 
+  texts: string[] = [
+    'unites AI innovations',
+    'offers exclusive AI insights',
+    'connects you with Al leaders',
+    'advances your Al projects'
+  ];
   formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSd2hbVfsIr0XkfOG_widISRF1tm0mDfY1u4yGQpiedkiPMZIQ/viewform?usp=sf_link';
+  typingDelay: number = 100;
+  erasingDelay: number = 50;
+  newTextDelay: number = 2000; // Задержка перед началом печати нового текста
 
   constructor(private router: Router) {
+  }
+
+  ngOnInit(): void {
+    this.startTyping();
   }
 
   navigateToForm() {
@@ -86,4 +99,39 @@ export class HomeComponent {
       window.scrollTo(0, 0);
     });
   }
+
+  async typeText(text: string, elementId: string, delay: number): Promise<void> {
+    const element = document.getElementById(elementId);
+    if (!element) return;
+
+    for (let i = 0; i < text.length; i++) {
+      element.textContent += text[i];
+      await this.delay(delay);
+    }
+  }
+
+  async eraseText(elementId: string, delay: number): Promise<void> {
+    const element: HTMLElement | null = document.getElementById(elementId);
+    if (!element) return;
+
+    while (element.textContent!.length > 0) {
+      element.textContent = element.textContent!.slice(0, -1);
+      await this.delay(delay);
+    }
+  }
+
+  delay(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async startTyping(): Promise<void> {
+    while (true) {
+      const randomText = this.texts[Math.floor(Math.random() * this.texts.length)];
+      await this.typeText(randomText, 'typewriter-text', this.typingDelay);
+      await this.delay(this.newTextDelay);
+      await this.eraseText('typewriter-text', this.erasingDelay);
+      await this.delay(this.typingDelay);
+    }
+  }
+
 }

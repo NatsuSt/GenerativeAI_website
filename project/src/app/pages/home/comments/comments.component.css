@@ -1,14 +1,12 @@
 .comments__body {
   position: relative;
-  height: 100%;
-  width: 400px;
+  width: calc(100vw / 3.5);
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(10, 20, 42, 0.1);
   border-radius: 1.5em;
   padding: 1em;
   margin: 0.5em;
-  /*flex: 0 0 calc(100% / 3.5); !* 3.5 элементов в видимой области *!*/
   box-sizing: border-box;
 }
 

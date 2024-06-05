@@ -23,29 +23,6 @@
   border-radius: 50%; /* Превращаем прямоугольный блок в круг */
 }
 
-/*.button {*/
-/*  transition: 0.5s;*/
-/*  !*margin-top: 32px;*!*/
-/*  margin-left: auto;*/
-/*  margin-right: auto;*/
-/*  background-color: #12A47F;*/
-/*  border: none;*/
-/*  border-radius: 100px;*/
-/*  padding: 15px 24px 15px 24px;*/
-/*  color: #FFFFFF;*/
-/*}*/
-
-/*.button:hover {*/
-/*  transition: 0.5s;*/
-/*  background-color: #417BFE;*/
-/*}*/
-
-/*.button-span {*/
-/*  font-family: "Open Sans";*/
-/*  font-weight: 500;*/
-/*  font-size: 16px;*/
-/*}*/
-
 .rounded-image {
   border-radius: 25px;
 }
@@ -77,6 +54,17 @@
   /*width: 100%;*/
 }
 
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: black; }
+  100% { border-color: transparent; }
+}
+
 .introduction-h1 {
   font-family: Inter;
   font-weight: 700;
@@ -85,6 +73,22 @@
   padding-bottom: 24px;
   margin: 0;
   color: #0A142A;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  /*border-right: 3px solid black;*/
+  animation: blink 0.75s step-end infinite;
+}
+
+.typewriter-text {
+  display: inline-block;
+  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
 }
 
 .introduction-h3 {
@@ -349,7 +353,9 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  overflow-x: hidden;
+  background: radial-gradient(circle closest-side at 50% 60%, #C1D8F7, white 99%);
 }
 
 .member_voices__h1
@@ -361,15 +367,55 @@ hr {
   color: #0A142A;
 }
 
-.member__left__shift {
+.comments {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.member__row {
   position: relative;
-  height: 100%;
   width: 100%;
   overflow: hidden;
+  margin: 1em;
+  box-sizing: border-box;
+}
+
+.member__row:last-child {
+  padding-right: 1em;
+}
+
+.scroll-top, .scroll-bottom {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
+}
+
+.scroll-top {
+  justify-content: flex-start;
+  animation: 10s linear 0s infinite alternate moveLeft;
+}
+
+.scroll-bottom {
+  justify-content: flex-end;
+  animation: 10s linear 0s infinite alternate moveRight;
+}
+
+/* Animations for comments */
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50vw );
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50vw);
+  }
 }
 
 

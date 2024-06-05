@@ -65,7 +65,9 @@
   <div class="introduction">
 
     <h1 class="introduction-h1">The #1 AI Council community that</h1>
-    <h1 class="introduction-h1">|</h1>
+    <div class="typewriter introduction-h1">
+      <div id="typewriter-text" class="typewriter-text"></div>
+    </div>
     <h3 class="introduction-h3">
       Dive into the heart of AI innovation: exclusive insights, elite networking, and leading-edge ethics.
       Your journey to impact AI starts here.
@@ -315,13 +317,18 @@
       Insights about Generative AI Councils joining
     </h1>
 
-    <div class="member__left__shift">
-      <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>
+    <div class="comments">
+      <div class="member__row">
+        <div class="scroll-top">
+          <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>
+        </div>
+      </div>
+      <div class="member__row">
+        <div class="scroll-bottom">
+          <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>
+        </div>
+      </div>
     </div>
-    <div class="member__left__shift">
-      <app-comments *ngFor="let com of comments" [comment]="com"></app-comments>
-    </div>
-
 
 <!--    <app-svg-pictures [svgID]="2"></app-svg-pictures>-->
   </div>

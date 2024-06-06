@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {NgForOf} from "@angular/common";
-import {SvgPicturesComponent} from "./svg-pictures/svg-pictures.component";
-import {EventComp} from "./shared/EventClass";
-import {EventsComponent} from "./events/events.component";
-import {Comment} from "./shared/Comment";
-import {CommentsComponent} from "./comments/comments.component";
 import {Router} from "@angular/router";
+
+import {SvgPicturesComponent} from "./svg-pictures/svg-pictures.component";
+import {CommentsComponent} from "./comments/comments.component";
+import {EventsComponent} from "./events/events.component";
+import {EventComp} from "./shared/EventClass";
+import {Comment} from "./shared/Comment";
 
 @Component({
   selector: 'app-home',

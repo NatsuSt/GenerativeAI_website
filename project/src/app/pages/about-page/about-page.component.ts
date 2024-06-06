@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'app-about-page',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
 })
-export class AboutPageComponent {
+export class AboutPageComponent implements OnDestroy{
+    ngOnDestroy(): void {
+      window.location.reload();
+    }
 
 }
